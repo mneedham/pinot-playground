@@ -1,4 +1,9 @@
+= Pinot Playground
 
+[source, bash]
+----
+docker-compose up
+----
 
 == Import
 
