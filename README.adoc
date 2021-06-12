@@ -2,12 +2,26 @@
 
 == Import
 
+=== Quick Start
+
 [source, bash]
 ----
 docker exec -it pinot-quickstart bin/pinot-admin.sh AddTable \
-  -tableConfigFile /data/table.json \
-  -schemaFile /data/schema.json -exec
+  -tableConfigFile /data/quick-start/table.json \
+  -schemaFile /data/quick-start/schema.json -exec
 
 docker exec -it pinot-quickstart bin/pinot-admin.sh LaunchDataIngestionJob \
-    -jobSpecFile /data/job-spec.yml
+    -jobSpecFile /data/quick-start/job-spec.yml
+----
+
+==== Vaccines
+
+[source, bash]
+----
+docker exec -it pinot-quickstart bin/pinot-admin.sh AddTable \
+  -tableConfigFile /data/covid/table.json \
+  -schemaFile /data/covid/schema.json -exec
+
+docker exec -it pinot-quickstart bin/pinot-admin.sh LaunchDataIngestionJob \
+    -jobSpecFile /data/covid/job-spec.yml
 ----

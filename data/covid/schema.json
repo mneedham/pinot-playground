@@ -1,0 +1,31 @@
+{
+  "schemaName": "vaccines",
+  "dimensionFieldSpecs": [
+    {
+      "name": "LTLA Code",
+      "dataType": "STRING"
+    },
+    {
+      "name": "LTLA Name",
+      "dataType": "STRING"
+    }
+  ],
+  "metricFieldSpecs": [
+    {
+      "name": "Under 30",
+      "dataType": "INT"
+    },
+    {
+      "name": "30-34",
+      "dataType": "INT"
+    },
+    {
+      "name": "35-39",
+      "dataType": "INT"
+    },
+    {
+      "name": "40-44",
+      "dataType": "INT"
+    }                
+  ]
+}
