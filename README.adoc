@@ -1,0 +1,13 @@
+
+
+== Import
+
+[source, bash]
+----
+docker exec -it pinot-quickstart bin/pinot-admin.sh AddTable \
+  -tableConfigFile /data/table.json \
+  -schemaFile /data/schema.json -exec
+
+docker exec -it pinot-quickstart bin/pinot-admin.sh LaunchDataIngestionJob \
+    -jobSpecFile /data/job-spec.yml
+----

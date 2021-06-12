@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  neo4j:
+    image: apachepinot/pinot:latest
+    command: "QuickStart -type batch"
+    container_name: "pinot-quickstart"
+    volumes:
+      - ./data:/data
+    ports:
+      - "9000:9000"
